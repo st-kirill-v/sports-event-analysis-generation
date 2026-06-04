@@ -1,0 +1,83 @@
+name: Repository Check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  repository-check:
+    name: Repository structure and artifact check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check required root files
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          for file in README.md pyproject.toml requirements.txt .gitignore; do
+            if [[ ! -f "$file" ]]; then
+              echo "Missing required root file: $file"
+              exit 1
+            fi
+          done
+
+      - name: Check Task folders and README files
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          for task in "Task 1" "Task 2" "Task 3" "Task 4" "Task 5"; do
+            if [[ ! -d "$task" ]]; then
+              echo "Missing required task folder: $task"
+              exit 1
+            fi
+
+            if [[ ! -f "$task/README.md" ]]; then
+              echo "Missing README.md in: $task"
+              exit 1
+            fi
+          done
+
+      - name: Check forbidden large model/archive files
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          forbidden_files="$(find . -type f \( \
+            -name '*.pt' -o \
+            -name '*.pth' -o \
+            -name '*.ckpt' -o \
+            -name '*.h5' -o \
+            -name '*.keras' -o \
+            -name '*.onnx' -o \
+            -name '*.7z' -o \
+            -name '*.rar' \
+          \) -print)"
+
+          if [[ -n "$forbidden_files" ]]; then
+            echo "Forbidden large model/archive files were found:"
+            echo "$forbidden_files"
+            exit 1
+          fi
+
+      - name: Check forbidden cache and environment folders
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          forbidden_dirs="$(find . -type d \( \
+            -name '__pycache__' -o \
+            -name '.ipynb_checkpoints' -o \
+            -name 'venv' -o \
+            -name '.venv' \
+          \) -print)"
+
+          if [[ -n "$forbidden_dirs" ]]; then
+            echo "Forbidden cache/environment folders were found:"
+            echo "$forbidden_dirs"
+            exit 1
+          fi

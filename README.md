@@ -1,5 +1,7 @@
 # Sports Event Analysis and Generation
 
+[![Repository Check](https://github.com/st-kirill-v/sports-event-analysis-generation/actions/workflows/repository-check.yml/badge.svg)](https://github.com/st-kirill-v/sports-event-analysis-generation/actions/workflows/repository-check.yml)
+
 Учебный ML/DL-репозиторий с пятью независимыми задачами по анализу и генерации спортивных событий. Главный README служит точкой входа: здесь собраны навигация, краткие описания подпроектов, данные, методы, метрики и инструкции по запуску.
 
 Проект оформлен как единая лабораторная работа по глубокому обучению: каждая задача остается самостоятельным подпроектом со своим README, кодом, данными и результатами.
