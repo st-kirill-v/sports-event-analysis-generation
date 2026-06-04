@@ -1,72 +1,47 @@
-# Task 1: Sports-1M frame preparation
+# Task 1 - Классификация типов спортивных событий
 
 [← К главному README](../README.md)
 
-Подготовка кадров для классификации видов спорта по Sports-1M.
+Task 1 посвящена подготовке кадров Sports-1M и обучению CNN-классификатора для распознавания видов спорта по изображениям.
 
-## Окружение
+## Цель
 
-```powershell
-$env:UV_CACHE_DIR=".uv-cache"
-uv venv
-uv sync
-```
+Сформировать датасет кадров из видео Sports-1M, выбрать целевые спортивные классы и обучить сверточную модель для классификации типов спортивных событий.
 
-Если `.venv` уже создан, достаточно:
+## Данные
 
-```powershell
-$env:UV_CACHE_DIR=".uv-cache"
-uv sync
-```
+- **Источник:** Sports-1M.
+- **Разметка:** `train_partition.txt`, `test_partition.txt`, `labels.txt`.
+- **Классы:** выбранные виды спорта из `configs/selected_sports.json`.
+- **Формат кадров:** JPEG `128x128`, разложенные по папкам классов.
 
-## Проверка разметки без скачивания
+Маппинг классов хранится в `configs/selected_sports.json`. Для футбола используется метка `association football`, для плавания - `swimming (sport)`.
 
-```powershell
-$env:UV_CACHE_DIR=".uv-cache"
-uv run python scripts/prepare_frames.py --dry-run
-```
+## Методы
 
-## Сбор train-кадров
+- извлечение кадров из видео;
+- балансировка количества кадров на класс;
+- ручная фильтрация подготовленных изображений;
+- CNN-классификатор;
+- train-аугментации: crop, horizontal flip, rotation, color jitter, shift/scale.
 
-```powershell
-$env:UV_CACHE_DIR=".uv-cache"
-uv run python scripts/prepare_frames.py `
-  --partition train_partition.txt `
-  --output data/frames/train `
-  --target-per-class 10000
-```
-
-## Сбор test-кадров
-
-Для тестовой выборки обычно лучше брать меньше кадров на класс, чтобы оценка не была слишком тяжелой:
-
-```powershell
-$env:UV_CACHE_DIR=".uv-cache"
-uv run python scripts/prepare_frames.py `
-  --partition test_partition.txt `
-  --output data/frames/test `
-  --target-per-class 1000
-```
-
-Кадры сохраняются как `128x128` JPEG в папки классов:
+## Структура папки
 
 ```text
-data/frames/train/
-  basketball/
-  football/
-  tennis/
-  ...
+Task 1/
+├── README.md
+├── pyproject.toml
+├── configs/
+│   └── selected_sports.json
+├── scripts/
+│   ├── prepare_frames.py
+│   └── train_cnn.py
+├── train_partition.txt
+├── test_partition.txt
+└── labels.txt
 ```
 
-Логи сохраняются в `data/logs/manifest.csv` и `data/logs/errors.csv`. Скрипт можно прерывать и запускать снова: он считает уже существующие изображения в папках классов и продолжает до нужного лимита.
-
-## Выбранные классы
-
-Маппинг лежит в `configs/selected_sports.json`. В `labels.txt` нет точной метки `football`, поэтому используется `association football`; для плавания используется `swimming (sport)`.
-
-## Обучение CNN
-
-После подготовки и ручной фильтрации данных структура должна быть такой:
+После подготовки данные имеют вид:
 
 ```text
 data/frames/train/
@@ -80,7 +55,51 @@ data/frames/test/
   ...
 ```
 
-Запуск обучения:
+## Запуск
+
+### Окружение
+
+```powershell
+$env:UV_CACHE_DIR=".uv-cache"
+uv venv
+uv sync
+```
+
+Если окружение уже создано:
+
+```powershell
+$env:UV_CACHE_DIR=".uv-cache"
+uv sync
+```
+
+### Проверка разметки
+
+```powershell
+$env:UV_CACHE_DIR=".uv-cache"
+uv run python scripts/prepare_frames.py --dry-run
+```
+
+### Подготовка train-кадров
+
+```powershell
+$env:UV_CACHE_DIR=".uv-cache"
+uv run python scripts/prepare_frames.py `
+  --partition train_partition.txt `
+  --output data/frames/train `
+  --target-per-class 10000
+```
+
+### Подготовка test-кадров
+
+```powershell
+$env:UV_CACHE_DIR=".uv-cache"
+uv run python scripts/prepare_frames.py `
+  --partition test_partition.txt `
+  --output data/frames/test `
+  --target-per-class 1000
+```
+
+### Обучение CNN
 
 ```powershell
 $env:UV_CACHE_DIR=".uv-cache"
@@ -93,17 +112,11 @@ uv run python scripts/train_cnn.py `
   --batch-size 64
 ```
 
-Скрипт сам определяет классы по папкам. Если после фильтрации какой-то класс отсутствует, количество выходов CNN будет уменьшено автоматически.
+Скрипт определяет классы по папкам. Если после фильтрации какой-то класс отсутствует, размер выходного слоя уменьшается автоматически.
 
-Аугментации применяются только к train:
+## Результаты и метрики
 
-- случайный кроп до `128x128`;
-- горизонтальное отражение;
-- небольшой поворот;
-- изменение яркости, контраста, насыщенности и оттенка;
-- небольшой сдвиг и масштабирование.
-
-Результаты сохраняются в `runs/cnn/`:
+Результаты обучения сохраняются в `runs/cnn/`:
 
 ```text
 best_model.pt
@@ -112,3 +125,13 @@ history.json
 classification_report.txt
 confusion_matrix.png
 ```
+
+Основные метрики:
+
+- accuracy;
+- classification report;
+- confusion matrix.
+
+## Вывод
+
+Task 1 формирует воспроизводимый pipeline для перехода от видео Sports-1M к набору изображений и CNN-модели классификации видов спорта.

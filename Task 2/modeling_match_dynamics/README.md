@@ -228,20 +228,6 @@ Test metrics:
 | LSTM top75 | 4.599 | 35.415 | 5.951 | 0.061 |
 | LSTM all_features | 4.607 | 34.580 | 5.881 | 0.083 |
 
-## Git / large files
-
-В репозиторий коммитится код и документация.
-
-Не коммитятся:
-
-- `.venv/`;
-- `data/`;
-- `outputs/`;
-- `archive/nba_50/`;
-- `.env`;
-- `kaggle.json`;
-- тяжелые `.csv`, `.npz`, `.keras`, `.pkl`, `.7z`, `.zip`.
-
 ## Colab note
 
 Google Colab не имеет доступа к локальному диску `D:\`.

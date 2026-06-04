@@ -2,8 +2,85 @@
 
 [← К главному README](../README.md)
 
-Подпроект находится в папке [`task_3_dl_project`](./task_3_dl_project/README.md).
+Task 3 посвящена генерации текстовых описаний футбольных событий. В основе решения - дообучение GPT-2 Medium на корпусе событий Football Events и оценка качества генерации автоматическими и экспертными метриками.
 
-Кратко: задача дообучает GPT-2 Medium на корпусе событий футбольных матчей и оценивает качество генерации через Perplexity, BLEU и MOS.
+## Цель
 
-Основная документация: [GPT-2 football text generation](./task_3_dl_project/README.md).
+Создать модель, которая порождает связные текстовые сценарии футбольных матчей, например описания голов, атак, угловых и других игровых эпизодов.
+
+## Данные
+
+- **Источник:** [Football Events на Kaggle](https://www.kaggle.com/datasets/secareanualin/football-events).
+- **Корпус:** около 941 тыс. событий из 9 074 матчей.
+- **Файл:** `data/events_cleaned.csv`.
+- **Используемые поля:** `id_odsp`, `sort_order`, `text`, `event_team`, `opponent`.
+
+## Методы
+
+- GPT-2 Medium (355M) как базовая языковая модель;
+- fine-tuning на текстах футбольных событий;
+- генерация текстовых сценариев;
+- оценка через Perplexity, BLEU и Mean Opinion Score;
+- сравнение базовой и дообученной модели.
+
+## Структура папки
+
+```text
+Task 3/
+├── README.md
+└── task_3_dl_project/
+    ├── README.md
+    ├── REPORT.md
+    ├── requirements.txt
+    ├── notebooks/
+    │   └── 01_training_and_evaluation.ipynb
+    ├── data/
+    │   └── events_cleaned.csv
+    ├── models/
+    │   └── gpt2-football-final-bundle.zip
+    └── results/
+        ├── tables/
+        ├── generations/
+        └── mos/
+```
+
+## Запуск
+
+Основной сценарий рассчитан на Kaggle.
+
+1. Создать Kaggle Notebook.
+2. Включить **Accelerator -> GPU (T4)**.
+3. Включить **Internet -> On** для загрузки `gpt2-medium`.
+4. Подключить датасет с `events_cleaned.csv`.
+5. Загрузить `task_3_dl_project/notebooks/01_training_and_evaluation.ipynb`.
+6. Выполнить **Run All**.
+
+Для быстрой проверки pipeline перед полным обучением можно ограничить обучение параметром `max_steps=50` в ячейке training.
+
+## Технологии
+
+| Компонент | Версия прогона |
+|---|---|
+| Python | 3.12 |
+| PyTorch | 2.10.0 + CUDA 12.8 |
+| Transformers | 5.0.0 |
+| Datasets | 4.8.5 |
+| NLTK | 3.9.1 |
+| GPU | Tesla T4 |
+
+## Результаты и метрики
+
+Прогон на Kaggle GPU T4, 3 эпохи, около 7.5 часов:
+
+| Метрика | Базовая GPT-2 Medium | Дообученная |
+|:---|---:|---:|
+| Perplexity (val) ↓ | 6.41 | **1.57** |
+| BLEU ↑ | 0.0187 | **0.6323** |
+| Средняя длина, слов | 65.2 | 44.4 |
+| MOS (1..5) ↑ | 2.91 | **4.48** |
+
+MOS рассчитывается по слепой анкете из `results/mos/`: пять оценщиков выставляют оценки по беглости, связности и реалистичности текста.
+
+## Вывод
+
+Дообучение GPT-2 Medium на футбольных событиях заметно улучшает качество генерации: модель становится более предметной, снижает perplexity и получает более высокую экспертную оценку реалистичности текстов.
