@@ -1,0 +1,87 @@
+# Python caches
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments and package caches
+.venv/
+venv/
+env/
+.env
+.env.*
+.uv-cache/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Credentials and local secrets
+kaggle.json
+*.key
+*.pem
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.keras
+*.onnx
+*.pkl
+*.joblib
+
+# Archives and large bundles
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+
+# Datasets and raw data
+datasets/
+data/raw/
+raw_data/
+**/datasets/
+**/data/raw/
+**/raw_data/
+
+# Experiment outputs
+wandb/
+mlruns/
+logs/
+checkpoints/
+runs/
+outputs/
+**/runs/
+**/outputs/
+**/logs/
+**/checkpoints/
+**/mlruns/
+**/wandb/
+
+# Task-specific large local artifacts
+Task 1/data/
+Task 1/runs/
+Task 2/modeling_match_dynamics/data/
+Task 2/modeling_match_dynamics/outputs/
+Task 2/modeling_match_dynamics/archive/nba_50/
+Task 3/task_3_dl_project/data/
+Task 3/task_3_dl_project/models/
+Task 4/nba-motions/results_bundle.zip
+Task 4/nba-motions/splits/
+Task 5/data/
+Task 5/outputs/
+
+structure_before_codex.txt
+*.zip
+*.7z
+*.rar
+**/results_bundle.zip

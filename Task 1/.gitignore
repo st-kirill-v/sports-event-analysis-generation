@@ -1,0 +1,9 @@
+.venv/
+.uv-cache/
+__pycache__/
+*.py[cod]
+
+data/frames/
+data/tmp_videos/
+data/logs/
+runs/

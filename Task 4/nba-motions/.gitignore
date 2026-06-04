@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+*.pyo
+.idea/
+.vscode/
+*.pt
+*.pth
+*.zip
+splits/*.txt
+
+# рабочая инфраструктура и внутренние материалы, в репозиторий не кладем
+CLAUDE.md
+.claude/
+QA_defense.md
+
+# итоговый бандл с результатами оставляем в репозитории
+!results_bundle.zip

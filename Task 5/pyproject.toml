@@ -1,0 +1,19 @@
+[project]
+name = "nba-movement-network-analysis"
+version = "0.1.0"
+description = "Network analysis of NBA player interactions from play-by-play and SportVU movement data."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.8",
+    "networkx>=3.2",
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "plotly>=5.24",
+    "py7zr>=0.21",
+    "scipy>=1.13",
+    "tqdm>=4.66",
+]
+
+[tool.uv]
+package = false

@@ -1,0 +1,119 @@
+sample_id,prompt,generation,fluency,coherence,realism,comment
+S001,The referee blows the whistle," for a bad foul.
+Foul by Nabil Dirar (FC Augsburg).
+Attempt blocked. Marcel Ndjeng (Borussia Monchengladbach) right footed shot from the centre of the box is blocked.
+Attempt blocked. Juan Arango (Borussia Monchengladbach) left footed shot from outside the box is blocked. Assisted by",5,5,5,
+S002,The goalkeeper," is caught offside.
+Foul by Nabil Dirar (FC Augsburg).
+Attempt blocked. Sebastian Langkamp (FC Augsburg) left footed shot from outside the box is blocked.
+Attempt saved. Sascha Molders (FC Augsburg) header from the centre of the box is saved in the bottom left corner. Assisted by Dominik Kohr.
+Offside",5,5,5,
+S003,The goalkeeper," for the season that won the FA Cup?
+
+I don't think it's even in the top six.
+
+The keeper for the season that won the FA Cup?
+
+Yes.
+
+The keeper for the season that won the FA Cup?
+
+Yeah.
+
+The goalkeeper for the season that won the FA Cup?
+
+Yes.
+
+The keeper for the",4,2,2,
+S004,The goalkeeper," for the season that won the FA Cup?
+
+I don't think it's even in the top six.
+
+The keeper for the season that won the FA Cup?
+
+Yes.
+
+The keeper for the season that won the FA Cup?
+
+Yeah.
+
+The goalkeeper for the season that won the FA Cup?
+
+Yes.
+
+The keeper for the",4,2,2,
+S005,The referee blows the whistle," for a bad foul.
+Foul by Nabil Dirar (FC Augsburg).
+Attempt blocked. Marcel Ndjeng (Borussia Monchengladbach) right footed shot from the centre of the box is blocked.
+Attempt blocked. Juan Arango (Borussia Monchengladbach) left footed shot from outside the box is blocked. Assisted by",5,5,5,
+S006,In the 90th minute,", the St Etienne defensive half is caught offside. Fousseni Diawara tries a through ball, but Nolan Roux is caught offside.
+Substitution, St Etienne. Valentin Eysseric replaces JAerAemy ClAement.
+Attempt missed. Valentin Eysseric (St Etienne) right footed shot from the left side of the",5,4,5,
+S007,The goalkeeper," is caught offside.
+Foul by Nabil Dirar (FC Augsburg).
+Attempt blocked. Sebastian Langkamp (FC Augsburg) left footed shot from outside the box is blocked.
+Attempt saved. Sascha Molders (FC Augsburg) header from the centre of the box is saved in the bottom left corner. Assisted by Dominik Kohr.
+Offside",5,5,5,
+S008,The referee blows the whistle," for the match and the stadium erupts into a deafening blast, making it hard to concentrate on watching the match on the big screen outside.
+
+At the stadium, everyone is on the edge of their seats and ready to take on a fight for victory. There are screams and cries of anger and fear as fans continue to scream at each other and try to kick the referee.
+
+A",5,4,3,
+S009,A brilliant pass by," Jordan Henderson put the visitors ahead in the 44th minute. Henderson, making his first start at left back since November 2013, cut inside from the left and spun his way into space before scoring with a powerful finish.
+
+Liverpool struggled to clear the ball and eventually had to settle for a goalkeeping error. They had other opportunities to get back into the game at the near post but could not find",5,5,4,
+S010,In the 90th minute,", the USSF announced that the game was being broadcast on NBC Sports Network. There were some complications with the video stream (which will likely be delayed for at least a few weeks due to the delay caused by the delay caused by the USSF's decision to move the match from LA to San Jose), but it's now been picked up by the USSF.
+
+So, there you have",4,3,2,
+S011,A brilliant pass by," Jordan Henderson (Liverpool).
+Foul by Nemanja Matic (Chelsea).
+Graziano Pelle (Liverpool) wins a free kick in the attacking half.
+Attempt saved. Raheem Sterling (Liverpool) right footed shot from outside the box is saved in the bottom left corner. Assisted by Raheem Sterling.
+Foul by Eden Hazard (Chelsea).
+",5,5,5,
+S012,A football match where," you can take that game as a game? It's a beautiful game.""
+
+The team's new coach, former New York Red Bulls head coach Jesse Marsch, was also at the game.
+
+The Red Bulls are still in a fight for first place in the Eastern Conference, and the match will play out as a rematch of the first leg of their second leg Sunday.
+
+A",5,4,3,
+S013,A football match where," the goal is missed.
+Foul by Nemanja Radoja (Cagliari).
+Simone Padoin (Juventus) wins a free kick in the defensive half.
+Foul by Michele Fornasier (Cagliari).
+Simone Padoin (Juventus) wins a free kick in the attacking half.
+Michele Fornasier",5,4,5,
+S014,A football match where," the goal is missed.
+Foul by Nemanja Radoja (Cagliari).
+Simone Padoin (Juventus) wins a free kick in the defensive half.
+Foul by Michele Fornasier (Cagliari).
+Simone Padoin (Juventus) wins a free kick in the attacking half.
+Michele Fornasier",5,4,5,
+S015,In the 90th minute,", the USSF announced that the game was being broadcast on NBC Sports Network. There were some complications with the video stream (which will likely be delayed for at least a few weeks due to the delay caused by the delay caused by the USSF's decision to move the match from LA to San Jose), but it's now been picked up by the USSF.
+
+So, there you have",4,3,2,
+S016,A brilliant pass by," Jordan Henderson put the visitors ahead in the 44th minute. Henderson, making his first start at left back since November 2013, cut inside from the left and spun his way into space before scoring with a powerful finish.
+
+Liverpool struggled to clear the ball and eventually had to settle for a goalkeeping error. They had other opportunities to get back into the game at the near post but could not find",5,5,4,
+S017,A brilliant pass by," Jordan Henderson (Liverpool).
+Foul by Nemanja Matic (Chelsea).
+Graziano Pelle (Liverpool) wins a free kick in the attacking half.
+Attempt saved. Raheem Sterling (Liverpool) right footed shot from outside the box is saved in the bottom left corner. Assisted by Raheem Sterling.
+Foul by Eden Hazard (Chelsea).
+",5,5,5,
+S018,The referee blows the whistle," for the match and the stadium erupts into a deafening blast, making it hard to concentrate on watching the match on the big screen outside.
+
+At the stadium, everyone is on the edge of their seats and ready to take on a fight for victory. There are screams and cries of anger and fear as fans continue to scream at each other and try to kick the referee.
+
+A",5,4,3,
+S019,A football match where," you can take that game as a game? It's a beautiful game.""
+
+The team's new coach, former New York Red Bulls head coach Jesse Marsch, was also at the game.
+
+The Red Bulls are still in a fight for first place in the Eastern Conference, and the match will play out as a rematch of the first leg of their second leg Sunday.
+
+A",5,4,3,
+S020,In the 90th minute,", the St Etienne defensive half is caught offside. Fousseni Diawara tries a through ball, but Nolan Roux is caught offside.
+Substitution, St Etienne. Valentin Eysseric replaces JAerAemy ClAement.
+Attempt missed. Valentin Eysseric (St Etienne) right footed shot from the left side of the",5,4,5,

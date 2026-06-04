@@ -1,0 +1,44 @@
+.venv/
+.uv-lock-env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Local data and generated artifacts
+data/
+outputs/
+archive/nba_50/
+*.zip
+*.7z
+*.csv
+*.npz
+*.keras
+*.pkl
+*.joblib
+*.h5
+*.png
+*.jpg
+*.jpeg
+*.parquet
+*.feather
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+kaggle.json
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json

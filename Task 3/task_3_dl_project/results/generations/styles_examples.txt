@@ -1,0 +1,26 @@
+==========================================================================================
+СТИЛЬ: Точный (greedy)
+ПРОМПТ: A brilliant pass by
+------------------------------------------------------------------------------------------
+Yannick Bolasie (Crystal Palace). Attempt missed. Yannick Bolasie (Crystal Palace) right footed shot from outside the box is close, but misses to the left. Assisted by Jason Puncheon. Attempt missed. Yannick Bolasie (Crystal Palace) right footed shot from outside the box is close, but misses to the left. Ass
+==========================================================================================
+СТИЛЬ: Энциклопедический (beam)
+ПРОМПТ: A brilliant pass by
+------------------------------------------------------------------------------------------
+Yannick Bolasie (Crystal Palace). Corner,  West Bromwich Albion. Conceded by Mile Jedinak. Corner,  West Bromwich Albion. Conceded by Mile Jedinak. Corner,  West Bromwich Albion. Conceded by Mile Jedinak. Corner,  West Bromwich Albion. Conceded
+==========================================================================================
+СТИЛЬ: Репортаж (сбаланс.)
+ПРОМПТ: A brilliant pass by
+------------------------------------------------------------------------------------------
+Jordan Henderson (Liverpool). Foul by Nemanja Matic (Chelsea). Graziano Pelle (Southampton) wins a free kick in the attacking half. Attempt missed      Ashley Young (Manchester United) header from very close range is just a bit too high. Assisted by Ander Herrera with a cross following a set piece situation. Offside
+==========================================================================================
+СТИЛЬ: Живой (эмоциональный)
+ПРОМПТ: A brilliant pass by
+------------------------------------------------------------------------------------------
+Jordan Ayew draws a foul in the penalty area. Penalty conceded by Mounir Obbadi (Marseille) after a foul in the penalty area. Mounir Obbadi (Marseille) is shown the red card for a bad foul. Goal!  Lorient 0, Marseille 2. Dimitri Payet (Marseille) converts the
+==========================================================================================
+СТИЛЬ: Лаконичный (без повторов)
+ПРОМПТ: A brilliant pass by
+------------------------------------------------------------------------------------------
+Diego Costa (Chelsea). Foul from a direct free kick. Gary Cahill (Everton) wins the ball in defensive half, but Romelu Lukaku is caught offside with an attempt following set piece situation!
+==========================================================================================

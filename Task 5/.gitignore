@@ -1,0 +1,13 @@
+*.json
+data/csv/**
+data/converted/**
+data/raw_json/**
+data/processed/**
+outputs/**
+.venv/**
+.python-version
+.idea/**
+*.pyc
+build/**
+dist/**
+movement.egg-info/**

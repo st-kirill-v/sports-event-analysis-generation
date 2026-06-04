@@ -1,0 +1,6 @@
+Стиль,avg_length,repetition_ratio,football_term_coverage
+greedy,43.2,0.305,1.0
+beam_4,37.0,0.23,0.8
+t0.9_p0.95_rp1.1,49.4,0.0,1.0
+t1.2_p0.98,44.4,0.037,1.0
+t0.7_p0.9_rp1.3,22.4,0.0,1.0

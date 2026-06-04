@@ -1,0 +1,29 @@
+# Тяжёлые артефакты — не пушим в GitHub (лимит 100 МБ/файл)
+data/*.csv
+models/
+*.zip
+
+# Промежуточные кеши обучения и оценки
+gpt2-football/
+tmp_eval/
+runs/
+wandb/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Системные / IDE / служебное
+.DS_Store
+.idea/
+.vscode/
+.claude/
+*.swp
