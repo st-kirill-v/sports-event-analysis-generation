@@ -1,0 +1,309 @@
+СРАВНЕНИЕ ГЕНЕРАЦИЙ: base GPT-2 Medium vs дообученная (GPT-2 Football)
+Параметры декодирования: do_sample=True, temperature=0.9, top_p=0.95, top_k=50, max_new_tokens=100
+Длина (слов) показана в скобках. EOS обрезает текст там, где модель сама решает закончить.
+====================================================================================================
+
+[01] ПРОМПТ: The match started
+----------------------------------------------------------------------------------------------------
+BASE  (77 слов):  The match started as usual in the centre of Munich with the Reds taking a three goal lead early on when Daniel Agger headed home a corner from the right.
+
+Munich were able to hold on with the game going to extra-time but only when the decisive strike from Christian Pulisic hit the post.
+
+On the stroke of half-time the visitors dominated possession and played with a little more purpose as they made it a 2-0 game.
+
+Pulisic then opened
+
+TUNED (59 слов):  The match started with a set piece situation. Danilo Cataldi tries a through ball, but Antonio Cassano is caught offside.
+Attempt missed. Danilo Cataldi (Juventus) left footed shot from the centre of the box misses to the left. Assisted by Paulo Dybala with a cross.
+Daniele Conti (Cagliari) wins a free kick in the attacking half.
+Foul by Mario Mandzukic (Juventus).
+Corner,
+====================================================================================================
+
+[02] ПРОМПТ: In the second half
+----------------------------------------------------------------------------------------------------
+BASE  (86 слов):  In the second half of November 2013, the Israeli authorities announced they would launch a full and thorough investigation into the deaths. Israel had previously admitted that it had conducted "a number of" raids on Gaza, killing people in houses belonging to Hamas, and had not "found any evidence of responsibility" by Hamas for the deaths of civilians.
+
+On 10 November 2013, it was reported that two Israeli soldiers had been killed in the Gaza strip. On 24 November 2013, three Israelis – including a soldier – were killed while
+
+TUNED (56 слов):  In the second half , Jonathan Viera tries a through ball, but VAictor Ruiz is caught offside.
+Foul by Jonathan Viera (Las Palmas).
+Manu Trigueros (Villarreal) wins a free kick in the defensive half.
+Foul by Luciano Vietto (Villarreal).
+Mauro Dos Santos (Las Palmas) wins a free kick in the defensive half.
+Offside, Las Palmas. Vicente Gomez tries a through
+====================================================================================================
+
+[03] ПРОМПТ: After the goal
+----------------------------------------------------------------------------------------------------
+BASE  (85 слов):  After the goal , he was sent to the dressing room and was given instructions to go inside his dressing room to change his clothes and change back to his uniform before returning to the training ground and waiting for his match against Manchester City.
+
+Wigan manager Alan Pardew also spoke to him, and it seemed like the winger might be on his way home.
+
+He made his way into the first team room and walked up to the manager, who offered him a handshake.
+
+In the end,
+
+TUNED (64 слов):  After the goal , Bournemouth. Joshua King replaces Adam Smith.
+Attempt missed. Benik Afobe (Tottenham Hotspur) left footed shot from outside the box misses to the right. Assisted by Nacer Chadli.
+Attempt missed. Joshua King (Bournemouth) header from the centre of the box misses to the left. Assisted by Benik Afobe with a cross.
+Attempt blocked. Harry Kane (Tottenham Hotspur) left footed shot from outside the box
+====================================================================================================
+
+[04] ПРОМПТ: The crowd
+----------------------------------------------------------------------------------------------------
+BASE  (78 слов):  The crowd cheers and applause erupts. It is a sight to behold.
+
+"We had no idea how big it would become," says Ms. Miller. "But it does. It brings in people, people from all over, people who would not normally come to the city, or from out of town, and it creates jobs."
+
+Photo
+
+The group of about 80 people includes people who make their living helping the poor, in the arts and other ways, and people who work in
+
+TUNED (58 слов):  The crowd is disappointed.
+Corner,  SC Freiburg. Conceded by Oliver Baumann.
+Foul by Karim Guede (SC Freiburg).
+Attempt missed. Jan Rosenthal (SC Freiburg) header from the centre of the box misses to the right. Assisted by Jonathan Schmid with a cross following a corner.
+Josip Drmic (1. FC Koln) wins a free kick on the right wing.
+Foul by Christian
+====================================================================================================
+
+[05] ПРОМПТ: It was a tough game
+----------------------------------------------------------------------------------------------------
+BASE  (79 слов):  It was a tough game ," he says of the game against the Giants. "We're not going to make mistakes. You're going to be able to do better. We're not going to play like we did the first two games."
+
+It's an honest statement. They play well enough to win, and they're just not playing well enough. The Giants have been too good, too often, this season. The Giants have had a field day. They've gotten into the end zone four times, and all
+
+TUNED (59 слов):  It was a tough game for the Pescara. Mauricio Pinilla tries a through ball, but Adrian Mutu is caught offside.
+Attempt saved. Riccardo Saponara (Sassuolo) right footed shot from the centre of the box is saved in the centre of the goal. Assisted by Antonio Floro Flores with a cross.
+Offside, Pescara. Damiano Zanon tries a through ball, but Gianluca Caprari is caught offside.
+====================================================================================================
+
+[06] ПРОМПТ: The final whistle
+----------------------------------------------------------------------------------------------------
+BASE  (86 слов):  The final whistle .
+
+I'm going to skip over some of the finer points of the game. To be clear: this is not a mock game of football. It's not about the players or the coaches. This is not a game of football to judge whether or not someone is talented and talented enough to succeed in this profession. This is a game of football to evaluate a person's talents and character to determine whether or not their decisions are well-informed. It's a game of football to see if
+
+TUNED (64 слов):  The final whistle is saved in the centre of the goal. Assisted by Maximilian Arnold.
+Attempt missed. Lukas Rupp (FC Nurnberg) right footed shot from the right side of the box is close, but misses to the left. Assisted by Hiroshi Kiyotake.
+Attempt missed. Raul Bobadilla (FC Nurnberg) right footed shot from outside the box is just a bit too high. Assisted by Alexander Esswein following a
+====================================================================================================
+
+[07] ПРОМПТ: The coach
+----------------------------------------------------------------------------------------------------
+BASE  (72 слов):  The coach told his players: "Don't be afraid to take a chance."
+
+Moura was the man in the room. The only one on the line.
+
+"When I got there, it was just me and the manager," said Moura. "He wasn't there to see the game. He was here to make sure everyone got what they deserved."
+
+A few minutes later, a replay of the penalty shoot-out began. It ended with the winner, so long
+
+TUNED (65 слов):  The coach is shown the yellow card for a bad foul.
+Attempt missed. Alvaro Arbeloa (Real Madrid) left footed shot from outside the box is close, but misses to the right. Assisted by Marcelo.
+Attempt saved. Marcelo (Real Madrid) right footed shot from outside the box is saved in the bottom right corner. Assisted by Karim Benzema.
+Goal!  Real Madrid 3, Granada CF 0. Karim Benzema (Real
+====================================================================================================
+
+[08] ПРОМПТ: A controversial decision by the referee
+----------------------------------------------------------------------------------------------------
+BASE  (83 слов):  A controversial decision by the referee at Tottenham Hotspur's 2-1 win over Manchester United last Wednesday was widely condemned and the controversy continues to flare up as the season reaches the end.
+
+
+The Premier League and FA have now issued a joint statement on the decision from the referee, Mike Dean, who says he thinks the game should be reviewed.
+
+
+But while some fans were pleased with the news, others feel that the decision was rushed and could have caused unnecessary distress for the Premier League.
+
+
+It's a difficult
+
+TUNED (64 слов):  A controversial decision by the referee Alejandro Arribas saved the 1. FC Koln. Jonathan Schmid replaces Maximilian Arnold.
+Attempt missed. Kevin Vogt (1. FC Koln) right footed shot from the centre of the box is too high following a corner.
+Goal!  Hertha Berlin 2, 1. FC Koln 1. Julian Schieber (Hertha Berlin) right footed shot from the centre of the box to the bottom left corner. Assisted by Anis Ben
+====================================================================================================
+
+[09] ПРОМПТ: The striker
+----------------------------------------------------------------------------------------------------
+BASE  (78 слов):  The striker said he was unaware of any attempt to contact him before he was removed from the field, saying it was a mistake.
+
+The 30-year-old was given a red card for his challenge on the Italian but was quickly dismissed.
+
+Media playback is not supported on this device Post-match: Chelsea boss Mourinho
+
+The Chelsea manager said it was a "great thing" that the decision had been reversed but would take time to sort out the situation.
+
+"In the end
+
+TUNED (47 слов):  The striker with the yellow card is Carlos Vela.
+Substitution, Real Sociedad. Asier Illarramendi replaces Yuri because of an injury.
+Substitution, Real Sociedad. Imanol Agirretxe replaces Imanol Agirretxe.
+Corner,  Espanyol. Conceded by Markel Bergara.
+Attempt blocked. Gerard Moreno (Espanyol) header from the centre of the box is blocked. Assisted
+====================================================================================================
+
+[10] ПРОМПТ: Manchester United
+----------------------------------------------------------------------------------------------------
+BASE  (61 слов):  Manchester United 's summer recruitment moves, who are currently playing in Ligue 1.
+
+He has joined from Lyon on a three-year deal with an option to extend.
+
+Pablo Zabaleta has signed a four-year contract extension at the club, which is reported to be worth £50,000-a-week.
+
+He joins Javier Hernandez, who joined from Real Madrid in January, and Morgan Schneiderlin, who joined for £26m.
+
+TUNED (68 слов):  Manchester United ) wins a free kick on the left wing.
+Booking      Michael Carrick (Manchester United) is shown the yellow card for a bad foul.
+Attempt missed. Michael Carrick (Manchester United) right footed shot from outside the box is too high. Assisted by Marcos Rojo.
+Attempt blocked. Wayne Rooney (Manchester United) right footed shot from the right side of the box is blocked. Assisted by Juan Mata.
+Attempt saved. A
+====================================================================================================
+
+[11] ПРОМПТ: In the 90th minute
+----------------------------------------------------------------------------------------------------
+BASE  (82 слов):  In the 90th minute of the match in London, Chelsea fans took to the streets to express their outrage with the way the game was being played, with one wearing a Tottenham Hotspur shirt.
+
+The fan was later arrested and placed on the footpath of Stamford Bridge.
+
+An anonymous reader wrote: "I think Chelsea should have started a ball-in to put a stop to the fans getting involved and we would have been in trouble. But they didn't have to, but they did. They should have
+
+TUNED (56 слов):  In the 90th minute , the penalty saved by Daniel Carvajal is saved in the top centre of the goal.
+Corner,  Valencia. Conceded by Diego LAopez.
+David LAopez (Levante) wins a free kick in the defensive half.
+Foul by Alvaro Negredo (Valencia).
+Alvaro Negredo (Valencia) is shown the yellow card for a bad foul.
+Corner,  Levante. Conceded by Daniel Pare
+====================================================================================================
+
+[12] ПРОМПТ: The goalkeeper
+----------------------------------------------------------------------------------------------------
+BASE  (61 слов):  The goalkeeper , who has made 19 appearances for the club this season, made a couple of big saves to keep out the second-half goals but could be looking forward to the return of his best player next season.
+
+A £5m move to Sunderland is also set to be off as Wenger plans for another summer signing and an upgrade at centre back.
+
+TUNED (57 слов):  The goalkeeper is caught offside.
+Substitution, Levante. Angel replaces VAictor.
+Substitution, FC Sevilla. Denis SuAarez replaces Ivan Rakitic.
+Offside, FC Sevilla. Denis SuAarez tries a through ball, but Carlos Bacca is caught offside.
+Attempt saved. MAichel (Levante) header from the centre of the box is saved in the top centre of the goal. Assisted by Valdo with a cross.
+====================================================================================================
+
+[13] ПРОМПТ: A brilliant pass by
+----------------------------------------------------------------------------------------------------
+BASE  (80 слов):  A brilliant pass by the Dutchman has forced the England keeper to react, with Dzeko eventually taking advantage of the ball to beat Lloris to the ball but it was an awful mistake by the goalkeeper and the referee who gave it away at the end.
+
+
+The ball went back to Lloris and he took it again but this time he was too quick and lost possession.
+
+The striker had a superb shot but Lloris's deflection went through to him, making the goal count.
+
+TUNED (45 слов):  A brilliant pass by Andrea Lazzari (Udinese).
+Cyril ThAerAeau (Chievo) wins a free kick on the right wing.
+Foul by Maurizio Domizzi (Udinese).
+Maurizio Domizzi (Udinese) is shown the yellow card for a bad foul.
+Attempt blocked. Cyril ThAerAeau (Chievo) right footed shot from outside the box is blocked.
+====================================================================================================
+
+[14] ПРОМПТ: Attempt missed.
+----------------------------------------------------------------------------------------------------
+BASE  (17 слов):  Attempt missed. java.io.IOException: Protocol unknown at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source) at sun.net.www.protocol.http.HttpURLConnection.send(Unknown Source) at sun.net.www.protocol.http.HttpURLConnection.sendRequest(Unknown Source) at sun.net.www.protocol.http.HttpURLConnection.sendRequest(Unknown Source) at sun.
+
+TUNED (48 слов):  Attempt missed. Andrea Rispoli (Chievo) right footed shot from the centre of the box is too high. Assisted by Lucas Castro with a cross.
+Foul by Juan Guillermo Cuadrado (Fiorentina).
+Riccardo Meggiorini (Chievo) wins a free kick in the defensive half.
+Foul by Mario Pasalic (Fiorentina).
+Perparim Hetemaj (Chievo) wins
+====================================================================================================
+
+[15] ПРОМПТ: Goal!
+----------------------------------------------------------------------------------------------------
+BASE  (81 слов):  Goal! It's that important!
+
+
+But even in the face of overwhelming pressure, the people who stand to benefit are the rest of the population who can afford to purchase high-quality housing, or who would not otherwise, and those who wish to live in the same environment that we all live in today.
+
+So here are the rules:
+
+Get to know your neighbors. We all feel uneasy in our neighborhood when we first arrive. Do you have a neighbor? If not, read the
+
+TUNED (50 слов):  Goal! Chievo 2, Napoli 1. Perparim Hetemaj (Chievo) right footed shot from the centre of the box to the bottom left corner. Assisted by Sergio Pellissier with a through ball.
+Attempt blocked. Giandomenico Mesto (Chievo) right footed shot from outside the box is blocked. Assisted by Perparim Hetemaj.
+Corner,  Chievo. Conceded
+====================================================================================================
+
+[16] ПРОМПТ: Substitution,
+----------------------------------------------------------------------------------------------------
+BASE  (79 слов):  Substitution, 2, 6]
+
+[1.26.7] The terms used in this clause in the context of a contract are those which are commonly used in the English language. In a contract by which one party is obliged to pay to another person a specified sum or to be liable for a specified sum, the terms are the same as those used in that other language or in that language in which they are generally understood.
+
+[1.26.8] In a contract where a person
+
+TUNED (54 слов):  Substitution, Barcelona. Pedro replaces Dani Alves.
+Foul by Thiago AlcAantara (Barcelona).
+Tiago AlcAantara (Barcelona) is shown the yellow card for a bad foul.
+Attempt blocked. Oscar Serrano (Rayo Vallecano) right footed shot from outside the box is blocked. Assisted by Jonathan Viera.
+Goal!  Rayo Vallecano 0, Barcelona 3. Lionel Messi (Barcelona) left footed shot from
+====================================================================================================
+
+[17] ПРОМПТ: Corner,
+----------------------------------------------------------------------------------------------------
+BASE  (42 слов):  Corner, K.F.M., and L.J.M.C. (2015). The Effect of Food Choices on Weight Loss and Insulin Resistance: A Meta-analysis. Appetite, 55, 1–15. doi: 10.1016/j.appet.2015.02.027 CrossRef Full Text | Google Scholar
+
+Rasmussen, A., and Ritchie, K.G. (2009). Adherence to weight-loss diets and body composition. J
+
+TUNED (54 слов):  Corner, Monaco. Conceded by Jean-Daniel Akpa-Akpro.
+Attempt missed. Geoffrey Kondogbia (Monaco) header from the centre of the box misses to the left. Assisted by Bernardo Silva with a cross following a corner.
+Foul by Serge Aurier (Toulouse).
+JoAao Moutinho (Monaco) wins a free kick in the defensive half.
+Serge Aurier (Toulouse) is shown the yellow
+====================================================================================================
+
+[18] ПРОМПТ: Penalty
+----------------------------------------------------------------------------------------------------
+BASE  (9 слов):  Penalty : None
+
+30/09/2017 19:20:56 Pashir_khan_jalal_khams_1241_p1
+
+2857 12/09/2017 10:21:46 xl-sans-m-d-dw-kalal_s-m-sans-m-d-dw-kalal_s-m-sans-m-d-dw-kalal
+
+TUNED (59 слов):  Penalty Chelsea).
+Nemanja Matic (Chelsea) is shown the yellow card for a bad foul.
+Attempt blocked. Adlene Guedioura (West Bromwich Albion) right footed shot from outside the box is blocked.
+Adlene Guedioura (West Bromwich Albion) wins a free kick in the defensive half.
+Foul by Gary Cahill (Chelsea).
+Attempt saved. Craig Dawson (West Bromwich Albion) right footed shot from outside
+====================================================================================================
+
+[19] ПРОМПТ: Foul by
+----------------------------------------------------------------------------------------------------
+BASE  (26 слов):  Foul by D.D.C.Foul by D.D.C.Foul by D.D.C.Foul by D.D.C.Foul by D.D.C. Foul by D.D.C.Foul by D.D.C. Foul by D.D.C.Foul by D.D.C.Foul by D.D.C. Foul by D.D.C.Foul by D
+
+TUNED (53 слов):  Foul by Federico Di Francesco (Pescara).
+Juanito GAomez (Verona) wins a free kick in the defensive half.
+Foul by Federico Di Francesco (Pescara).
+Lorenzo De Silvestri (Sampdoria) wins a free kick in the attacking half.
+Attempt saved. Roberto Soriano (Sampdoria) right footed shot from outside the box is saved in the bottom right corner.
+Corner,
+====================================================================================================
+
+[20] ПРОМПТ: Yellow card shown to
+----------------------------------------------------------------------------------------------------
+BASE  (81 слов):  Yellow card shown to prevent use on your phone.
+
+Cards are available for purchase in the store.
+
+Please ensure that you are viewing the correct version before purchasing the card as you may be missing your PIN.
+
+If your card is in a format that is not supported by the app, please make sure to select the format and/or card you wish to use when purchasing the card.
+
+Please note that if you purchase a card through the app you are also purchasing a PIN.
+
+TUNED (59 слов):  Yellow card shown to Juanfran (Deportivo de La CoruAna).
+Substitution, Getafe. Juan Valera replaces Pedro LeAon.
+Attempt saved. Emi (Getafe) right footed shot from the left side of the box is saved in the bottom right corner. Assisted by Pedro Mosquera.
+Attempt missed. Juan Valera (Getafe) header from the centre of the box misses to the right. Assisted by Pedro Mosquera with a
+====================================================================================================
+
+Сгенерировано за 127 c на cuda.
