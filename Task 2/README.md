@@ -142,7 +142,7 @@ uv run python scripts\nba\train_nba_lstm_feature_sets.py --feature-set all
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
 | `home_scores_next_half` | Baseline LSTM | 0.614 | 0.640 | 0.796 | 0.609 | 0.530 | 0.702 | 0.464 | 0.230 |
 | `home_scores_next_half` | Top50 LSTM | 0.606 | 0.624 | 0.843 | 0.717 | 0.629 | 0.695 | 0.468 | 0.234 |
-| `away_scores_next_half` | Baseline LSTM | 0.557 | 0.585 | 0.349 | 0.437 | 0.383 | 0.371 | 0.487 | 0.246 |
+| `away_scores_next_half` | Baseline LSTM | 0.557 | 0.585 | 0.349 | 0.383 | 0.371 | 0.432 | 0.487 | 0.246 |
 | `away_scores_next_half` | Top50 LSTM | 0.559 | 0.579 | 0.387 | 0.490 | 0.590 | 0.587 | 0.487 | 0.246 |
 
 ### NBA
