@@ -149,8 +149,8 @@ uv run python scripts\nba\train_nba_lstm_feature_sets.py --feature-set all
 
 | Model | MAE | MSE | RMSE | R2 |
 |---|---:|---:|---:|---:|
-| Constant zero baseline | 5.017 | 40.017 | 6.326 | -0.061 |
-| Train mean baseline | 5.027 | 40.126 | 6.335 | -0.064 |
+| Constant zero baseline | 5.517 | 44.017 | 6.826 | -0.061 |
+| Train mean baseline | 5.527 | 44.126 | 6.835 | -0.064 |
 | LSTM top75 | 4.599 | 35.415 | 5.951 | 0.061 |
 | LSTM all_features | 4.607 | 34.580 | 5.881 | 0.083 |
 
